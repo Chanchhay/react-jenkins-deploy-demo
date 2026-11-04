@@ -1,0 +1,16 @@
+networks:
+  react-app:
+    name: react-app
+    driver: bridge
+services:
+  frontend:
+    networks:
+      - react-app
+    image: react-app
+    build:
+      context: .
+      dockerfile: test.Dockerfile
+    pull_policy: build
+    ports:
+      - :80
+

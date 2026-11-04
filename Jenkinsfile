@@ -5,7 +5,7 @@ pipeline {
         stage("Build"){
             steps{
                 sh """
-                    docker build -t jenkins-react-pipeline . 
+                    docker build -t jenkins-react-pipeline .
                 """
             }
         }
@@ -14,10 +14,10 @@ pipeline {
         stage("Deploy"){
             steps{
                 sh"""
-                
-                 docker stop reactjs-cont || true 
-                docker rm reactjs-cont || true 
-                
+
+                docker stop reactjs-cont || true
+                docker rm reactjs-cont || true
+
                 docker run -dp 3000:80 \
                     --name reactjs-cont \
                     jenkins-react-pipeline
@@ -25,15 +25,15 @@ pipeline {
 
             }
         }
-    
+
         stage("Add Domain name "){
             steps{
                 sh """
-                echo "Runing shellscript to add the domain name for the service " 
-                
+                echo "Runing shellscript to add the domain name for the service "
+
                 """
             }
         }
-        
+
     }
 }
