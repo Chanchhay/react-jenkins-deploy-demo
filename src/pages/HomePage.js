@@ -10,7 +10,7 @@ const HomePage = () => {
                 <div className="container pt-4   order-2 order-md-1">
                     <h1 className="display-2 header-title">
                         {" "}
-                      Welcome to EarthDX K8S Argocd II
+                      Welcome to EarthDX (Test Update)
                     </h1>
                     <p> We are a team of passionate people whose goal is to improve everyone's life through disruptive products. We build great products to solve your business problems.</p>
                     <div className="d-flex pt-5">
@@ -78,7 +78,7 @@ const HomePage = () => {
             </div>
 
             <div
-                className="container section3 d-flex flex-column 
+                className="container section3 d-flex flex-column
       flex-md-row mt-5 pt-5 justify-content-center align-items-center"
             >
                 <div className="image-side col-sm-12 col-md-6 col-lg-5 ">
@@ -100,8 +100,8 @@ const HomePage = () => {
             </div>
 
             <div
-                className="section4 mx-0 mx-lg-5 d-flex flex-column flex-md-row  justify-content-center       
-      align-items-center 
+                className="section4 mx-0 mx-lg-5 d-flex flex-column flex-md-row  justify-content-center
+      align-items-center
       container"
             >
                 <div className="text-side w-100 w-md-75  order-2 order-md-0">
